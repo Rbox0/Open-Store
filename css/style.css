@@ -12,13 +12,18 @@ body {
 
 .login a {
     display: ruby-text;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 20px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* border-radius: 20px; */
     font-weight: 1000;
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px 12px;
     margin: 0 10px;
+}
+
+a:hover {
+    color: rgb(31, 22, 164);
+    transition: 0.3s;
 }
 
 .background-two {
@@ -100,9 +105,9 @@ footer {
 
 .con-social-media {}
 
-/*
-      contact page
-*/
+
+
+/* contact page*/
 div textarea {
     width: 500px;
     min-height: 150px;
