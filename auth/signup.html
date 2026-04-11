@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
 </head>
+
 <body>
     <div>
         <p style="text-align: center;">login</p>
@@ -14,31 +16,32 @@
             <input type="hidden" value="id">
         </div>
         <div>
-         <label for="name">Username</label>
-          <input id="name" type="text" required placeholder="Username" name="name" autofocus minlength="3"> 
-        </div>
-        <br> 
-        <div>
-         <label for="email">Email</label>
-          <input id="email" type="email" required placeholder="Email" name="email" value="majed@gmail.com" disabled> 
-        </div>
-        <br>     
-        <div>
-            <label for="pass">Password</label>
-            <input id="pass" type="password" required placeholder="Password" name="password" minlength="8" maxlength="16">
+            <label for="name">Username</label>
+            <input id="name" type="text" required placeholder="Username" name="name" autofocus minlength="3">
         </div>
         <br>
         <div>
-          <label for="Country">Country</label>
-          <input list="Country" required name="Country">
-          <datalist id="Country">
-            <option value="Yemen">
-            <option value="Saudi Arabia">
-            <option value="Syria">
-            <option value="Iraq">
-            <option value="Oman">
-            <option value="Qatar">
-          </datalist>
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="Email" name="email">
+        </div>
+        <br>
+        <div>
+            <label for="pass">Password</label>
+            <input id="pass" type="password" required placeholder="Password" name="password" minlength="8"
+                maxlength="16">
+        </div>
+        <br>
+        <div>
+            <label for="Country">Country</label>
+            <input list="Country" required name="Country">
+            <datalist id="Country">
+                <option value="Yemen">
+                <option value="Saudi Arabia">
+                <option value="Syria">
+                <option value="Iraq">
+                <option value="Oman">
+                <option value="Qatar">
+            </datalist>
         </div>
         <br>
         <div>
@@ -47,4 +50,5 @@
         </div>
     </form>
 </body>
+
 </html>
