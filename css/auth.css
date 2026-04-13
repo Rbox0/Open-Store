@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(210, 202, 202, 0.493);
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0 110px 0 115px;
+    border-radius: 50px;
+    padding: 100px;
+    width: 150px;
+    height: 250px;
+}
+
+.asi-signup {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: 100px 110px;
+    padding: 10px 30px 70px;
+    border-radius: 10px;
+    text-align: center;
+    height: 220px;
+    width: 360px;
+    position: relative;
+    bottom: 215px;
+    left: 1300px;
+}
+
+.p-singup {
+    text-align: right;
+    color: rgb(0, 0, 0);
+    direction: rtl;
+}
+
+button {
+    background-color: #1a4192;
+    color: rgb(255, 255, 255);
+    width: 70px;
+    margin-top: 3px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 8px 10px 20px 0;
+}
