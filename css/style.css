@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+* a {
+    text-decoration: none;
+}
+
 body {
     background-color: rgb(255, 255, 255);
-    font-family: "Ancizar Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: 798;
-    font-style: normal;
-    
+    font-family: "ibm plex sans arabic", sans-serif;
     margin: 0;
 }
 
@@ -25,27 +29,26 @@ header {
     z-index: 1020;
 
 }
-
+               /*  Banner Logo   */
 .title-openstore a {
     display: block;
     color: rgb(255, 255, 255);
-    text-align: right;
+    text-align: center;
     font-size: 35px;
-    text-decoration: none;
     padding-right: 16px;
     position: sticky;
     top: 0;
     z-index: 1020;
-    ;
+
 
 }
 
-.title-openstore a::hover {
+/* .title-openstore a::hover {
     color: rgb(255, 255, 255);
-}
+} */
 
-.login a {
-    display: ruby-text;
+.link-header a {
+    /* display: inline-block; */
     /* border: 2px solid rgb(0, 0, 0); */
     /* border-radius: 20px; */
     font-weight: 1000;
@@ -54,19 +57,19 @@ header {
     padding: 10px 12px;
     margin: 0 10px;
     position: relative;
-    bottom: 40px;
+    bottom: 10px;
+    left: 35%;
 
 }
 
 a {
     color: rgb(0, 0, 238, 1);
-    text-decoration: none;
 }
 
-/* a:hover {
-    color: rgb(0, 38, 255);
+.link-header a:hover {
+    font-weight: 700;
     transition: 0.3s;
-} */
+}
 
 ul li {
     display: block;
@@ -98,20 +101,27 @@ ul::before {
 }
 
 /*      Bar Two    */
-.background-two {
+.img-background-two {
+    text-align: right;
     background-image: url(/include/img_header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: auto;
+    height: 617px;
 }
 
-
-
-.under-title {
+.background-title {
+    float: center;
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 30px;
+    padding: 198px;
+}
+
+.background-title:hover {
+    font-size: 35px;
+    transition: ease-in-out 0.8s;
 }
 
 .menu {
@@ -123,7 +133,26 @@ ul::before {
 
 .main-content {
     display: block;
+    padding: 100px 20px;
+    height: 100%;
+    text-align: center;
+    margin-top: -68px;
+}
 
+.h-main-content {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 35px;
+}
+
+.h-main-content::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 4px;
+    background-color: black;
+    margin: -15px auto 0;
+    border-radius: 2px;
 }
 
 .products,
@@ -137,28 +166,60 @@ ul::before {
     box-shadow: 0px 0px 20px gray;
     text-align: center;
     height: 220px;
-    width: 17.75%;
+    width: 22.75%;
     margin-left: 1.88%;
     direction: rtl;
     cursor: pointer;
     position: relative;
     align-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    transition-duration: 0.8s;
+    transition: ease-in-out 0.8s;
+    border: 1px solid #000000;
+    /* transition-property: margin-top ,margin-right ,margin-left, width; */
+}
+
+.products:hover {
+    display: inline-flex;
+    background-color: rgb(12 85 91);
+    border: none;
+    color: #f8f8f8;
+    border-radius: 50px;
+    width: 295px;
+}
+
+.perfumes:hover {
+    display: inline-flex;
+    background-color: rgb(12 85 91);
+    border: none;
+    color: #f8f8f8;
+    border-radius: 50px;
+    width: 295px;
+}
+
+.shoes:hover {
+    display: inline-flex;
+    background-color: rgb(12 85 91);
+    border: none;
+    color: #f8f8f8;
+    border-radius: 50px;
+    width: 295px;
 
 }
 
-/* .products,
-.perfumes,
-.shoes,
-.Watches :hover{
-    background-size: 500px;
-    transition: 0.3s;
-} */
+.Watches:hover {
+    display: inline-flex;
+    background-color: rgb(12 85 91);
+    color: #f8f8f8;
+    border-radius: 50px;
+    width: 295px;
 
-.products {}
+}
+
+/* .products {}
 
 .perfumes {}
 
@@ -166,7 +227,7 @@ ul::before {
 
 .clear {
     clear: both;
-}
+} */
 
 /* table {
     width: 100%;
@@ -185,7 +246,6 @@ footer {
     background-color: #0c555b;
     color: rgb(255, 255, 255);
     text-align: right;
-    text-decoration: none;
     padding: 8px;
     margin-top: 70px;
     margin-bottom: 0;
@@ -193,10 +253,10 @@ footer {
 
 .copyright {
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    text-align: right;
+    background-color: rgb(9 63 67);
+    text-align: center;
     padding: 8px;
-    padding-right: 100px;
+    direction: rtl;
 }
 
 
