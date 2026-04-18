@@ -7,25 +7,41 @@
     box-sizing: border-box;
 }
 
-* a {
+a {
     text-decoration: none;
 }
 
 body {
-    background-color: white;
     font-family: var(--famly-font);
     margin: 0;
 }
 
+.link-top-bar {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    height: 40px;
+}
+
+.link-top-bar a {
+    color: var(--main-color);
+    padding: 9px 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.link-top-bar a:hover {
+    background: rgba(0,0,0,0.05);
+}
 
 .main-header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 15px 30px;
     background-color: var(--main-color);
-    background-size: cover;
-    width: auto;
-    margin-top: -3px;
-    border-bottom-right-radius: 80px;
-    border-bottom-left-radius: 80px;
-    box-shadow: -1px 13px 20px 1px rgb(177, 174, 174);
+    width: 100%;
+    margin-top: -7px;
 }
 
 header {
@@ -37,41 +53,37 @@ header {
 
 /*  Banner Logo   */
 .title-openstore a {
-    display: block;
+    display: inline;
     color: white;
-    text-align: center;
     font-size: 35px;
-    padding-right: 16px;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-
-
+    font-weight: bold;
 }
 
-.link-header a {
-    /* display: inline-block; */
-    /* border: 2px solid rgb(0, 0, 0); */
-    /* border-radius: 20px; */
-    font-weight: 1000;
+/* links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    padding-right: 25%;
+}
+
+.nav-links a {
     color: white;
-    text-decoration: none;
-    padding: 10px 12px;
-    margin: 0 10px;
-    position: relative;
-    bottom: 10px;
-    left: 35%;
-
-}
-
-
-.link-header a:hover {
-    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
-ul li {
-    display: block;
+.nav-links a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.qualifiers :hover {
+    color: red;
+}
+
+/* ul li {
+    display: inline-flex;
     position: relative;
     padding-left: 10px;
     margin-bottom: 10px;
@@ -83,9 +95,6 @@ ul::before {
     height: 0;
     position: absolute;
     right: 634px;
-    /* left: 700px; */
-    /* top: 500px; */
-    /* margin-top: 10px; */
     border-width: 10px;
     border-style: solid;
     border-color: rgb(102, 112, 102) transparent transparent transparent;
@@ -97,44 +106,38 @@ ul::before {
     list-style: none;
     padding: 0;
     margin: 0;
-}
+} */
 
 /*      Bar Two    */
-.img-background-two {
+.bar-two {
     text-align: right;
-    background-image: url(/include/img_header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: auto;
     height: 617px;
 }
 
-.background-title {
+.bar-two {
     color: black;
     text-align: center;
     font-size: 30px;
     padding: 198px;
     cursor: default;
+    z-index: 1020;
 }
 
-.background-title:hover {
+.bar-two-title:hover {
     font-size: 35px;
-    transition: ease-in-out 0.8s;
+    transition: 0.8s ease;
 }
 
-.menu {
-    display: block;
-    color: black;
-    text-align: center;
-    font-size: 20px;
-}
-
-.main-content {
-    display: block;
+.cards-content {
+    display: flex;
+    flex-direction: column;
     padding: 100px 20px;
     height: 100%;
     text-align: center;
-    margin-top: -68px;
+    padding-top: 40px;
 }
 
 .h-main-content {
@@ -164,7 +167,7 @@ ul::before {
 }
 
 /* cards */
-.clothes-card ,
+.clothes-card,
 .perfumes-card,
 .shoes-card,
 .watches-card {
@@ -174,7 +177,7 @@ ul::before {
     border-radius: 10px;
     box-shadow: 0 0 10px gray;
     height: 360px;
-    width: calc(100% / 4);
+    width: 23%;
     transition: 0.3s ease;
 }
 
@@ -192,7 +195,6 @@ ul::before {
     height: 148px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 /* hover  */
@@ -203,8 +205,6 @@ ul::before {
     transform: scale(1.05);
     color: #333;
     border-radius: 15px;
-    border-radius: 15px;
-
 }
 
 
@@ -236,6 +236,8 @@ footer {
     color: rgb(255, 255, 255);
     text-align: right;
     padding: 8px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
     margin-top: 70px;
     margin-bottom: 0;
 }
