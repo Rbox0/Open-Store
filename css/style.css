@@ -1,3 +1,8 @@
+:root {
+    --famly-font: "ibm plex sans arabic", sans-serif;
+    --main-color: rgb(12, 84, 90);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,14 +12,14 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    font-family: "ibm plex sans arabic", sans-serif;
+    background-color: white;
+    font-family: var(--famly-font);
     margin: 0;
 }
 
 
 .main-header {
-    background-color: #0c555b;
+    background-color: var(--main-color);
     background-size: cover;
     width: auto;
     margin-top: -3px;
@@ -29,10 +34,11 @@ header {
     z-index: 1020;
 
 }
-               /*  Banner Logo   */
+
+/*  Banner Logo   */
 .title-openstore a {
     display: block;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
     font-size: 35px;
     padding-right: 16px;
@@ -43,16 +49,12 @@ header {
 
 }
 
-/* .title-openstore a::hover {
-    color: rgb(255, 255, 255);
-} */
-
 .link-header a {
     /* display: inline-block; */
     /* border: 2px solid rgb(0, 0, 0); */
     /* border-radius: 20px; */
     font-weight: 1000;
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
     padding: 10px 12px;
     margin: 0 10px;
@@ -62,9 +64,6 @@ header {
 
 }
 
-a {
-    color: rgb(0, 0, 238, 1);
-}
 
 .link-header a:hover {
     font-weight: 700;
@@ -111,12 +110,11 @@ ul::before {
 }
 
 .background-title {
-    float: center;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
     font-size: 30px;
-    padding-bottom: 30px;
     padding: 198px;
+    cursor: default;
 }
 
 .background-title:hover {
@@ -126,7 +124,7 @@ ul::before {
 
 .menu {
     display: block;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
     font-size: 20px;
 }
@@ -143,6 +141,7 @@ ul::before {
     text-align: center;
     margin-bottom: 80px;
     font-size: 35px;
+    cursor: default;
 }
 
 .h-main-content::after {
@@ -150,80 +149,70 @@ ul::before {
     display: block;
     width: 120px;
     height: 4px;
-    background-color: black;
+    background-color: rgb(37, 29, 29);
     margin: -15px auto 0;
     border-radius: 2px;
 }
 
-.products,
-.perfumes,
-.shoes,
-.Watches {
-    display: inline-flex;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 30px 70px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px gray;
-    text-align: center;
-    height: 220px;
-    width: 22.75%;
-    margin-left: 1.88%;
+.cards {
+    display: flex;
+    justify-content: space-evenly;
     direction: rtl;
-    cursor: pointer;
-    position: relative;
-    align-content: center;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+/* cards */
+.clothes-card ,
+.perfumes-card,
+.shoes-card,
+.watches-card {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    transition-duration: 0.8s;
-    transition: ease-in-out 0.8s;
-    border: 1px solid #000000;
-    /* transition-property: margin-top ,margin-right ,margin-left, width; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    height: 360px;
+    width: calc(100% / 4);
+    transition: 0.3s ease;
 }
 
-.products:hover {
-    display: inline-flex;
-    background-color: rgb(12 85 91);
-    border: none;
-    color: #f8f8f8;
-    border-radius: 50px;
-    width: 295px;
-}
-
-.perfumes:hover {
-    display: inline-flex;
-    background-color: rgb(12 85 91);
-    border: none;
-    color: #f8f8f8;
-    border-radius: 50px;
-    width: 295px;
-}
-
-.shoes:hover {
-    display: inline-flex;
-    background-color: rgb(12 85 91);
-    border: none;
-    color: #f8f8f8;
-    border-radius: 50px;
-    width: 295px;
+.clothes-card a,
+.perfumes-card a,
+.shoes-card a,
+.watches-card a {
+    color: rgb(0, 0, 0);
 
 }
 
-.Watches:hover {
-    display: inline-flex;
-    background-color: rgb(12 85 91);
-    color: #f8f8f8;
-    border-radius: 50px;
-    width: 295px;
+/* images cards  */
+.cards img {
+    width: 100%;
+    height: 148px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* hover  */
+.clothes-card:hover,
+.perfumes-card:hover,
+.shoes-card:hover,
+.watches-card:hover {
+    transform: scale(1.05);
+    color: #333;
+    border-radius: 15px;
+    border-radius: 15px;
 
 }
 
-/* .products {}
 
-.perfumes {}
+/* 
 
-.shoes {}
+
+
+
 
 .clear {
     clear: both;
