@@ -1,49 +1,73 @@
 body {
-    background-color: rgba(210, 202, 202, 0.493);
+    background-color: #f4f7f6;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 form {
-    display: inline-block;
+    display: block;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    margin: 0 110px 0 115px;
-    border-radius: 50px;
-    padding: 100px;
-    width: 150px;
-    height: 250px;
+    margin: 80px auto;
+    border-radius: 15px;
+    padding: 40px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .asi-signup {
-    display: inline-block;
+    display: block;
     background-color: rgb(255, 255, 255);
-    margin: 100px 110px;
+    margin: 20px auto;
     padding: 10px 30px 70px;
     border-radius: 10px;
     text-align: center;
-    height: 220px;
-    width: 360px;
-    position: relative;
-    bottom: 215px;
-    left: 1300px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .p-singup {
-    text-align: right;
+    text-align: center;
     color: rgb(0, 0, 0);
     direction: rtl;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+input:focus {
+    border-color: #0c545a;
+    box-shadow: 0 0 5px rgba(12, 84, 90, 0.2);
 }
 
 button {
-    background-color: #1a4192;
-    color: rgb(255, 255, 255);
-    width: 70px;
-    margin-top: 3px;
+    background-color: #0c545a;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
     padding: 10px 20px;
     border: none;
-    border-radius: 10px;
-    box-shadow: 8px 10px 20px 0;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #093f43;
+    transform: translateY(-2px);
 }

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="This Store For Sell Everything">
-    <title> المتجر المفتوح</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="متجر إلكتروني لبيع الملابس، الأحذية، العطور، الساعات والحقائب">
+    <title>Open Store - المتجر المفتوح</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,121 +22,209 @@
             <a href="auth/login.html" title="Go To Login Page"> تسجيل حساب</a>
             <a href="auth/signup.html" title="Go To Signup Page"> إنشاء حساب</a>
         </div>
+        <!-- Search Bar -->
+        <form class="search-bar" method="get">
+            <label for="search">بحث</label>
+            <input id="search" name="search" type="search" placeholder="ابحث عن المنتج ...">
+        </form>
     </div>
     <hr>
     <header>
         <!-- Main Header -->
-        <div class="main-header">
+        <div class="header">
             <!-- Title -->
             <div class="title-openstore">
                 <a href="index.html"><strong>المتجر المفتوح</strong></a>
             </div>
-            <br>
 
             <!-- Nav Bar -->
-            <!-- <nav class="menu">
-                <!-- links -->
+            <!-- links -->
             <nav class="nav-links">
-                <a href="#">الرئيسية</a>
-                <a href="#">المنتجات</a>
-                <a href="#">الماركات</a>
-                <a href="#">العروض</a>
-                <a class="qualifiers" href="#">تصفيات</a>
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">المنتجات</a></li>
+                    <li><a href="#">العروض</a></li>
+                    <li> <a href="#">الماركات</a></li>
+                    <li><a class="qualifiers" href="#">تصفيات</a></li>
+                </ul>
             </nav>
         </div>
 
     </header>
-
-    <!-- Background  -->
-    <section>
-        <div class="bar-two">
-
-            <div>
-
-            </div>
-            <div>
-                <div class="bar-two-title">
-                    <h1> مرحباً بك في المتجر المفتوح </h1>
+    <main>
+        <div>
+            <!-- Background  -->
+            <div class="bar-hello">
+                <div>
+                    <div class="bar-hello-title">
+                        <h1> مرحباً بك في المتجر المفتوح </h1>
+                    </div>
                 </div>
             </div>
-    </section>
-    <br>
+            <br>
+    </main>
+    <!-- Offer Cards -->
     <section>
-        <div class="cards-content">
-            <div class="h-main-content">
+        <div class="cards-offer offers-bg">
+            <div class="offer-title">
                 <h2>عروض المتجر المفتوح</h2>
             </div>
             <div class="cards">
-                <div class="clothes-card">
+                <article class="clothes-card">
                     <a href="page/clothes.html">
                         <div class="img-clothes">
-                            <img src="include/clothes-card.png" alt="clothes logo">
+                            <img src="include/clothes-card.png" alt="ملابس">
                         </div>
                         <h2> الملابس </h2>
-                        <span>تشكيلة راقية تجمع بين الجودة العالية والتصاميم العصرية، لتمنحك تجربة فاخرة تلبي ذوقك بكل
-                            أناقة.</span>
-                </div>
-                </a>
-                <div class="perfumes-card">
+                        <span>تشكيلة راقية تجمع بين الجودة العالية والتصاميم العصرية، لتمنحك تجربة فاخرة تلبي
+                            ذوقك بكل أناقة.</span>
+                    </a>
+                </article>
+                <article class="perfumes-card">
                     <a href="page/perfumes.html">
                         <div class="img-perfums">
-                            <img src="include/perfums-cards.png" alt="logo perfumes">
+                            <img src="include/perfums-cards.png" alt="عطور">
                         </div>
-                        <h2> العطورات</h2>
+                        <h2> العطور</h2>
                         <span>عطورات أصلية ذات جودة عالية. </span>
-                </div>
+                    </a>
+                </article>
+                <article class="bags-card">
+                    <a href="page/bags.html">
+                        <div class="img-perfums">
+                            <img src="include/bags-card.png" alt="حقائب">
+                        </div>
+                        <h2> الحقائب</h2>
+                        <span>حقائب أصلية ذات جودة عالية. </span>
+                    </a>
+                </article>
                 <div class="shoes-card">
                     <a href="page/shoes.html">
                         <div class="img-shoes">
-                            <img src="include/shoses-cards.png" alt="logo shoes">
+                            <img src="include/shoses-cards.png" alt="أحذية ">
                         </div>
                         <h2>الأحذيه</h2>
-                        <span id="p-shoes">تجد في هذا القسم كل ما تحتاجه من الاحذيه الرجاليه والنسائيه والولاديه
+                        <span>تجد في هذا القسم كل ما تحتاجه من الاحذيه الرجاليه والنسائيه والولاديه
                             والشبابيه.</span>
+                    </a>
                 </div>
-                </a>
-                <div class="watches-card">
+                <article class="watches-card">
                     <a href="page/watches.html">
                         <div class="img-shoes">
-                            <img src="include/watches-card.png" alt="logo shoes">
+                            <img src="include/watches-card.png" alt="ساعات">
                         </div>
                         <h2>الساعات</h2>
-                        <span id="p-shoes">تجد في هذا القسم كل ما تحتاجه من الساعات الرجاليه والنسائيه والولاديه
+                        <span>تجد في هذا القسم كل ما تحتاجه من الساعات الرجاليه والنسائيه والولاديه
                             والشبابيه.</span>
-                </div>
-                </a>
+                    </a>
+                </article>
             </div>
         </div>
-        </div>
     </section>
-    <br>
-    <hr>
+    <!-- Seasons -->
     <section>
-        <h2>المواسم</h2>
-    </section>
-    <footer>
-        <div class="con-social-media">
-            <p>تواصل معنا عبر وسائل التواصل الاجتماعي</p>
-            <a href="https://www.facebook.com/OpenStore" target="_blank" title="Go To Facebook Page">فيسبوك</a><br>
-            <a href="https://www.twitter.com/OpenStore" target="_blank" title="Go To Twitter Page">تويتر</a><br>
-            <a href="https://www.instagram.com/OpenStore" target="_blank" title="Go To Instagram Page">انستغرام</a>
-        </div>
-        <div>
+        <div class="cards-offer seasons-bg">
+            <div class="season-title">
+                <h2>مواسم المتجر المفتوح</h2>
+            </div>
+            <div class="seasons-container">
+                <div class="cards seasons-grid">
+                    <!-- Winter Season -->
+                    <article class="season-card winter">
+                        <div class="season-badge">جديد</div>
+                        <div class="season-img">
+                            <img src="include/winter-collection.png" alt="مجموعة الشتاء">
+                        </div>
+                        <div class="season-info">
+                            <h3>مجموعة الشتاء</h3>
+                            <p>دفء وأناقة لا تضاهى مع تشكيلة المعاطف الجديدة.</p>
+                            <a href="#" class="season-btn">اكتشف الآن</a>
+                        </div>
+                    </article>
 
+                    <!-- Summer Season -->
+                    <article class="season-card summer">
+                        <div class="season-img">
+                            <img src="include/summer-collection.png" alt="مجموعة الصيف">
+                        </div>
+                        <div class="season-info">
+                            <h3>أزياء الصيف</h3>
+                            <p>خامات باردة وتصاميم عصرية تناسب أجواء الصيف المشرقة.</p>
+                            <a href="#" class="season-btn">اكتشف الآن</a>
+                        </div>
+                    </article>
+
+                    <!-- Autumn Season (The "More" content) -->
+                    <article class="season-card autumn">
+                        <div class="season-img">
+                            <img src="include/autumn-card.png" alt="مجموعة الخريف">
+                        </div>
+                        <div class="season-info">
+                            <h3>ألوان الخريف</h3>
+                            <p>تشكيلة مميزة تعكس هدوء الخريف بلمسات راقية.</p>
+                            <a href="#" class="season-btn">تصفح المجموعة</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Side Bar next to Seasons -->
+                <aside class="seasons-aside">
+                    <div class="aside-block">
+                        <h3>أشهر الماركات</h3>
+                        <ul>
+                            <li><a href="#">نايكي (Nike)</a></li>
+                            <li><a href="#">أديداس (Adidas)</a></li>
+                            <li><a href="#">غوتشي (Gucci)</a></li>
+                            <li><a href="#">شانيل (Chanel)</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside-block ad-space">
+                        <p>خصم خاص 20% لمشتركي النشرة البريدية!</p>
+                        <button class="aside-btn">اشترك الآن</button>
+                    </div>
+                </aside>
+            </div>
         </div>
-        <div>
-            <p><a href="mailto:openstore@gmail.com" target="_blank">openstore@gmail.com</a><span>:تواصل معنا عبر
-                    البريد
-                    الإلكتروني </span></p>
-        </div>
-        <div>
-            <p>تواصل معنا عبر الوتس</p>
-            <p>+967 772 441 109</p>
-            <p>+967 711 688 979</p>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>المتجر المفتوح</h3>
+                <p>وجهتكم الأولى لأرقى الملابس، العطور، والساعات. جودة عالية وتصاميم عصرية تناسب جميع الأذواق.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="#">المنتجات</a></li>
+                    <li><a href="contact/contactus.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>تواصل معنا</h3>
+                <p>البريد الإلكتروني:</p>
+                <a href="mailto:openstore@gmail.com">openstore@gmail.com</a>
+                <p>واتساب:</p>
+                <span class="num"> 109 441 772 +967</span><br>
+                <span> 979 688 711 +967</span>
+            </div>
+
+            <div class="footer-column">
+                <h3>تابعنا</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/OpenStore" target="_blank">فيسبوك</a><br>
+                    <a href="https://www.twitter.com/OpenStore" target="_blank">تويتر</a><br>
+                    <a href="https://www.instagram.com/OpenStore" target="_blank">انستغرام</a>
+                </div>
+            </div>
         </div>
     </footer>
     <div class="copyright">
-        <p>جميع الحقوق محفوظة &copy; المتجر المفتوح </p>
+        <span>جميع الحقوق محفوظة &copy; المتجر المفتوح </span>
     </div>
 </body>
 
