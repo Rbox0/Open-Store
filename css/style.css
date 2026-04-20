@@ -118,109 +118,7 @@ header {
     background-color: #ffffff;
 }
 
-.seasons-bg {
-    background-color: #f9f9f9;
 
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-}
-
-.seasons-container {
-    display: flex;
-    gap: 30px;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.seasons-grid {
-    flex: 3;
-    justify-content: flex-start !important;
-}
-
-.seasons-aside {
-    flex: 1; 
-    background: #fff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    height: fit-content;
-    position: sticky;
-    top: 100px;
-    text-align: right;
-}
-
-.aside-block h3 {
-    color: var(--main-color);
-    margin-bottom: 15px;
-    border-bottom: 2px solid var(--bg-color);
-    padding-bottom: 5px;
-}
-
-.season-card {
-    background: white;
-    width: 300px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.4s;
-    position: relative;
-    border: 1px solid #eee;
-}
-
-.season-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-.season-img {
-    height: 200px;
-    overflow: hidden;
-}
-
-.season-info {
-    padding: 20px;
-    text-align: center;
-}
-
-.season-info h3 {
-    color: var(--main-color);
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.season-info p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.season-btn {
-    display: inline-block;
-    padding: 8px 20px;
-    background-color: var(--main-color);
-    color: white !important;
-    border-radius: 20px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.season-btn:hover {
-    background-color: #093f43;
-    letter-spacing: 1px;
-}
-
-.season-badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: #e74c3c;
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    z-index: 5;
-}
 
 /*           Offer       */
 .cards-offer {
@@ -234,10 +132,7 @@ header {
     margin-bottom: 40px;
 }
 
-.season-title {
-    font-size: 30px;
-    margin-bottom: 40px;
-}
+
 
 .offer-title::after {
     content: "";
@@ -248,7 +143,16 @@ header {
     background: linear-gradient(to right, rgb(255 255 255), var(--main-color));
 }
 
+.offers-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .cards {
+    flex: 3;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -337,8 +241,104 @@ header {
     z-index: 1;
 }
 
-/*          aside       */
-aside {}
+/*          Seasons      */
+
+.seasons-bg {
+    background-color: #f9f9f9;
+
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.season-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.seasons-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.seasons-panels {
+    display: flex;
+    flex: 3;
+    height: 450px;
+    gap: 10px;
+}
+
+.panel {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
+}
+
+.panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 1;
+}
+
+.panel:hover {
+    flex: 5;
+}
+
+.panel-content {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    left: 30px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: right;
+}
+
+.panel:hover .panel-content {
+    opacity: 1;
+    transition: opacity 0.5s ease 0.3s;
+}
+
+.panel-content h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.panel-content p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.panel-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: white;
+    color: var(--main-color);
+    font-weight: bold;
+    border-radius: 20px;
+}
+/*        Side Bar next to Seasons       */
+
+.seasons-aside {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    height: fit-content;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
 
 footer {
     background: var(--main-color);
@@ -369,6 +369,7 @@ footer {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 10px;
     display: inline-block;
+    cursor: default;
 }
 
 .footer-column ul {
@@ -382,6 +383,7 @@ footer {
     font-size: 14px;
     line-height: 1.8;
     margin-bottom: 10px;
+    cursor: default;
 }
 
 footer a {
@@ -400,4 +402,5 @@ footer a:hover {
     background: #093f43;
     color: white;
     padding: 10px;
+    cursor: default;
 }

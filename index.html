@@ -18,9 +18,9 @@
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="link-top-bar">
+            <a href="auth/signup.html" title="Go To Signup Page"> التسجيل</a>
+            <a href="auth/login.html" title="Go To Login Page">  تسجيل الدخول</a>
             <a href="contact/contactus.html" target="_blank" title="Go To Contact Us Page">تواصل معنا</a>
-            <a href="auth/login.html" title="Go To Login Page"> تسجيل حساب</a>
-            <a href="auth/signup.html" title="Go To Signup Page"> إنشاء حساب</a>
         </div>
         <!-- Search Bar -->
         <form class="search-bar" method="get">
@@ -45,7 +45,7 @@
                     <li><a href="#">المنتجات</a></li>
                     <li><a href="#">العروض</a></li>
                     <li> <a href="#">الماركات</a></li>
-                    <li><a class="qualifiers" href="#">تصفيات</a></li>
+                    <li><a class="qualifiers" href="#">تخفيضات</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,6 +69,7 @@
             <div class="offer-title">
                 <h2>عروض المتجر المفتوح</h2>
             </div>
+            <div class="offers-container">
             <div class="cards">
                 <article class="clothes-card">
                     <a href="page/clothes.html">
@@ -119,55 +120,7 @@
                     </a>
                 </article>
             </div>
-        </div>
-    </section>
-    <!-- Seasons -->
-    <section>
-        <div class="cards-offer seasons-bg">
-            <div class="season-title">
-                <h2>مواسم المتجر المفتوح</h2>
-            </div>
-            <div class="seasons-container">
-                <div class="cards seasons-grid">
-                    <!-- Winter Season -->
-                    <article class="season-card winter">
-                        <div class="season-badge">جديد</div>
-                        <div class="season-img">
-                            <img src="include/winter-collection.png" alt="مجموعة الشتاء">
-                        </div>
-                        <div class="season-info">
-                            <h3>مجموعة الشتاء</h3>
-                            <p>دفء وأناقة لا تضاهى مع تشكيلة المعاطف الجديدة.</p>
-                            <a href="#" class="season-btn">اكتشف الآن</a>
-                        </div>
-                    </article>
-
-                    <!-- Summer Season -->
-                    <article class="season-card summer">
-                        <div class="season-img">
-                            <img src="include/summer-collection.png" alt="مجموعة الصيف">
-                        </div>
-                        <div class="season-info">
-                            <h3>أزياء الصيف</h3>
-                            <p>خامات باردة وتصاميم عصرية تناسب أجواء الصيف المشرقة.</p>
-                            <a href="#" class="season-btn">اكتشف الآن</a>
-                        </div>
-                    </article>
-
-                    <!-- Autumn Season (The "More" content) -->
-                    <article class="season-card autumn">
-                        <div class="season-img">
-                            <img src="include/autumn-card.png" alt="مجموعة الخريف">
-                        </div>
-                        <div class="season-info">
-                            <h3>ألوان الخريف</h3>
-                            <p>تشكيلة مميزة تعكس هدوء الخريف بلمسات راقية.</p>
-                            <a href="#" class="season-btn">تصفح المجموعة</a>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Side Bar next to Seasons -->
+            <!-- Side Bar next to Offers -->
                 <aside class="seasons-aside">
                     <div class="aside-block">
                         <h3>أشهر الماركات</h3>
@@ -179,10 +132,58 @@
                         </ul>
                     </div>
                     <div class="aside-block ad-space">
-                        <p>خصم خاص 20% لمشتركي النشرة البريدية!</p>
+                        <p>خصم خاص 20% لمشتركي الخدمة الشهريه!</p>
                         <button class="aside-btn">اشترك الآن</button>
                     </div>
                 </aside>
+            </div>
+        </div>
+    </section>
+    <!-- Seasons -->
+    <section>
+        <div class="cards-offer seasons-bg">
+            <div class="season-title">
+                <h2>مواسم المتجر المفتوح</h2>
+            </div>
+            <div class="seasons-container">
+                <div class="seasons-panels">
+                    <!-- Winter Season -->
+                    <div class="panel winter" style="background-image: url('include/winter-collection.png');">
+                        <div class="panel-content">
+                            <h3>شتاء 2026</h3>
+                            <p>دفء وأناقة لا تضاهى مع تشكيلة المعاطف الجديدة.</p>
+                            <a href="#" class="panel-btn">اكتشف المجموعة</a>
+                        </div>
+                    </div>
+
+                    <!-- Summer Season -->
+                    <div class="panel summer" style="background-image: url('include/summer-collection.png');">
+                        <div class="panel-content">
+                            <h3>أزياء الصيف</h3>
+                            <p>خامات باردة وتصاميم عصرية تناسب أجواء الصيف المشرقة.</p>
+                            <a href="#" class="panel-btn">تصفح الآن</a>
+                        </div>
+                    </div>
+
+                    <!-- Autumn Season -->
+                    <div class="panel autumn" style="background-image: url('include/autumn-card.png');">
+                        <div class="panel-content">
+                            <h3>مجموعة الخريف</h3>
+                            <p>تشكيلة مميزة تعكس هدوء الخريف بلمسات راقية.</p>
+                            <a href="#" class="panel-btn">رؤية المزيد</a>
+                        </div>
+                    </div>
+                    <!-- Spring  Season -->
+                    <div class="panel autumn" style="background-image: url('include/autumn-card.png');">
+                        <div class="panel-content">
+                            <h3> أزياء الربيع</h3>
+                            <p>ألوان زاهية وتصاميم منعشة تناسب أجواء الربيع الجميلة.</p>
+                            <a href="#" class="panel-btn">اكتشف الآن</a>
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
     </section>
@@ -201,6 +202,16 @@
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="#">المنتجات</a></li>
                     <li><a href="contact/contactus.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>سياسات المتجر</h3>
+                <ul>
+                    <li><a href="#">سياسة الاستبدال والاسترجاع</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">شروط الخدمة</a></li>
+                    <li><a href="#">اتفاقية الاستخدام</a></li>
                 </ul>
             </div>
 
@@ -227,5 +238,4 @@
         <span>جميع الحقوق محفوظة &copy; المتجر المفتوح </span>
     </div>
 </body>
-
 </html>
