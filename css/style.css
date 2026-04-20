@@ -141,20 +141,22 @@ header {
 
 .offer-title {
     background-color: var(--main-color);
-    padding: 10;
+    padding: 40px;
     font-size: 30px;
     margin-bottom: 40px;
+    width: 800px;
+    max-width: 95%;
+    margin: 0 auto 40px auto;
+    color: white;
 }
-
-
 
 .offer-title::after {
     content: "";
     display: block;
-    width: 190px;
+    width: 400px;
     height: 4px;
     margin: 10px auto;
-    background: linear-gradient(to right, rgb(255 255 255), var(--main-color));
+    background: linear-gradient(to right, var(--main-color), rgb(255 255 255));
 }
 
 .offers-container {
@@ -180,7 +182,7 @@ header {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    cursor: pointer;
+    cursor: default;
     display: flex;
     flex-direction: column;
 }
@@ -192,6 +194,7 @@ header {
 .card-img {
     height: 200px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card-img img {
@@ -203,12 +206,14 @@ header {
 
 [class$="-card"]:hover .card-img img {
     opacity: 0.7;
-    transform: scale(1.1);
 }
 
 .card-content {
     padding: 20px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .card-content h3 {
@@ -222,12 +227,13 @@ header {
     color: #777;
     line-height: 1.4;
     margin-bottom: 15px;
+    flex-grow: 1;
 }
 
 .card-footer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     margin-top: auto;
     gap: 10px;
     width: 100%;
@@ -240,24 +246,22 @@ header {
 }
 
 .add-to-cart {
-    padding: 8px 15px;
+    font-family: inherit;
+    height: 45px;
     background: var(--main-color);
     color: white;
     border: none;
-    border-radius: 35px;
+    border-radius: 0;
     font-size: 12px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.add-to-cart :hover{
-    padding: 8px 15px;
-    background: gray;
-    color: white;
-    border: none;
 
-    font-size: 12px;
-    cursor: pointer;
-    transition: 0.3s;
+.add-to-cart:hover {
+    background-color: #093f43;
 }
 
 .card-badge {
@@ -429,9 +433,12 @@ footer a:hover {
 .s-button-element:not(:disabled):not([loading]) {
     pointer-events: auto;
 }
-.s-button-btn, .s-price-range-number-input {
+
+.s-button-btn,
+.s-price-range-number-input {
     border-radius: .75rem;
 }
+
 .s-button-wide {
     width: 100%;
 }
@@ -460,7 +467,7 @@ footer a:hover {
         height: auto;
         flex-direction: column;
     }
-    
+
     .panel {
         height: 300px;
     }
