@@ -29,7 +29,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background: var(--secondary-color);
-    padding: 1px 100px;
+    padding: 5px 20px;
 }
 
 .link-top-bar {
@@ -78,6 +78,7 @@ header {
 }
 
 /*       logo-title         */
+
 .title-openstore a {
     color: white;
     font-size: 28px;
@@ -100,6 +101,8 @@ header {
 .nav-links a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+
+/*          Main Bar     */
 
 .bar-hello {
     text-align: center;
@@ -126,14 +129,9 @@ header {
     padding: 10px
 }
 
-.offers-bg {
-    background-color: #ffffff;
-}
-
-
-
 /*           Offer       */
-.cards-offer {
+
+.cards-offer-bg {
     background: white;
     padding: 50px 20px;
     text-align: center;
@@ -141,11 +139,10 @@ header {
 
 .offer-title {
     background-color: var(--main-color);
-    padding: 40px;
+    padding: 40px 200px 40px 200px;
     font-size: 30px;
-    margin-bottom: 40px;
-    width: 800px;
-    max-width: 95%;
+    width: fit-content;
+    max-width: 800px;
     margin: 0 auto 40px auto;
     color: white;
 }
@@ -153,7 +150,7 @@ header {
 .offer-title::after {
     content: "";
     display: block;
-    width: 400px;
+    width: 90%;
     height: 4px;
     margin: 10px auto;
     background: linear-gradient(to right, var(--main-color), rgb(255 255 255));
@@ -278,14 +275,14 @@ header {
 /*          Seasons      */
 
 .seasons-bg {
-    background-color: #f9f9f9;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    background-color: var(--secondary-color);
+    padding-bottom: 120px;
 }
 
 .season-title {
     font-size: 30px;
     margin-bottom: 40px;
+    color: var(--text-color);
 }
 
 .seasons-container {
@@ -364,6 +361,17 @@ header {
 }
 
 /*        Brands       */
+
+.brands-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.new-brands {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
 
 footer {
     background: var(--main-color);
