@@ -367,10 +367,16 @@ header {
     margin-bottom: 40px;
 }
 
-.new-brands {
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 40px;
+.brands-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.brands-container img {
+    margin: 24px auto;
+    width: 100%;
+    opacity: 0.8;
 }
 
 footer {
