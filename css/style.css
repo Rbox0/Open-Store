@@ -115,6 +115,7 @@ header {
     font-size: 36px;
     margin-bottom: 15px;
     color: var(--main-color);
+    cursor: default;
 }
 
 .hello-content p {
@@ -122,6 +123,7 @@ header {
     color: #666;
     max-width: 800px;
     margin: 0 auto;
+    cursor: default;
 }
 
 .hello-content a {
@@ -145,17 +147,28 @@ header {
     max-width: 800px;
     margin: 0 auto 40px auto;
     color: white;
+    cursor: default;
 }
 
-.offer-title::after {
-    content: "";
-    display: block;
+.line-offer {
     width: 90%;
     height: 4px;
     margin: 10px auto;
     background: linear-gradient(to right, var(--main-color), rgb(255 255 255));
+    animation-name: line;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
+@keyframes line {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
 .offers-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -251,7 +264,7 @@ header {
     border-radius: 0;
     font-size: 12px;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,7 +288,7 @@ header {
 /*          Seasons      */
 
 .seasons-bg {
-    background-color: var(--secondary-color);
+    background: var(--bg-color);
     padding-bottom: 120px;
 }
 
@@ -360,9 +373,117 @@ header {
     border-radius: 20px;
 }
 
+/*       Outfit       */
+
+.outfit-spotlight {
+    padding: 80px 20px;
+    background: white;
+}
+
+.spotlight-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.spotlight-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px var(--bg-color);
+}
+
+.spotlight-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.floating-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.spotlight-details {
+    text-align: right;
+}
+
+.spotlight-subtitle {
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.spotlight-title {
+    font-size: 48px;
+    color: var(--main-color);
+    margin: 10px 0 20px;
+}
+
+.spotlight-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.look-items {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.look-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+.item-price {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.spotlight-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.spotlight-btn:hover {
+    letter-spacing: 1px;
+    background: #093f43;
+}
+
+@media (max-width: 768px) {
+    .spotlight-container {
+        grid-template-columns: 1fr;
+    }
+    .spotlight-image img {
+        height: 400px;
+    }
+}
+
 /*        Brands       */
 
 .brands-title {
+    color: var(--main-color);
     font-size: 30px;
     margin-bottom: 40px;
 }
@@ -371,23 +492,27 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     max-width: 1300px;
     margin: 0 auto;
     border: 2px solid #7a7a7a;
+    box-shadow: inset 0px 0px 20px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
+
 .brands-container img {
-    width: 100%; 
+    width: 150px;
     height: auto;
-    margin: 20px auto;
-    opacity: 0.7;
+    opacity: 0.6;
+    filter: grayscale(100%);
     transition: 0.3s;
 }
 
 .brands-container img:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.15);
+    filter: grayscale(0%);
 }
 
 footer {
