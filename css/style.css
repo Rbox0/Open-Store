@@ -369,14 +369,25 @@ header {
 
 .brands-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     max-width: 1300px;
     margin: 0 auto;
+    border: 2px solid #7a7a7a;
+    padding: 20px;
 }
 .brands-container img {
-    margin: 24px auto;
-    width: 100%;
-    opacity: 0.8;
+    width: 100%; 
+    height: auto;
+    margin: 20px auto;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.brands-container img:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 footer {
